@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Instrumentos Musicales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login">
+        <h1>Ingreso al Curso</h1>
+        <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" placeholder="Usuario" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="error" class="hidden">Usuario o contraseña incorrectos</p>
+    </div>
+
+    <div id="course" class="hidden">
+        <h1>Curso: Introducción a los Instrumentos Musicales</h1>
+        <h2>Contenido del Curso</h2>
+        <p>En este curso aprenderás sobre diferentes instrumentos musicales, sus características y cómo se tocan.</p>
+        
+        <h3>1. Instrumentos de Cuerda</h3>
+        <p>Los instrumentos de cuerda, como el violín y la guitarra, producen sonido al vibrar sus cuerdas, el violin utiliza un instrumento llamado Arco que nos ayuda
+            a poder tocar de una mejor manera un violin. Aprende más aquí:</p>
+        <a href="https://es.wikipedia.org/wiki/Instrumento_de_cuerda" target="_blank">Wikipedia - Instrumentos de Cuerda</a>
+
+        <h3>2. Instrumentos de Percusión</h3>
+        <p>Los instrumentos de percusión son aquellos que producen sonido al ser golpeados, friccionados o agitados.
+        Algunos ejemplos incluyen el bombo, congas, djembe, pandero y batería. Estos instrumentos se clasifican generalmente en dos categorías: 
+        membranófonos (como el djembe y el tambor) y idiófonos (como los platillos y el balafón).</p>
+        <img class="centered" src="Percu.jpg" alt="Instrumentos de viento" width="500">
+
+        
+        <h3>3. Instrumentos de Viento</h3>
+        <p>Los instrumentos de viento o aerófonos son una familia de instrumentos musicales que producen 
+        el sonido esencialmente haciendo vibrar el aire, sin involucrar cuerdas, membranas o el cuerpo del instrumento.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Oa-szudTYQI" 
+            class="centered"    title="Video de instrumentos de percusión" frameborder="0" allowfullscreen>
+        </iframe>
+
+        <button id="startQuiz">Comenzar Evaluación</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+        <h1>Evaluación</h1>
+        <form id="quizForm">
+            <div>
+                <p>1. ¿Qué tipo de instrumento es la guitarra?</p>
+                <input type="radio" name="q1" value="correct"> De cuerda<br>
+                <input type="radio" name="q1" value="wrong"> De viento<br>
+                <input type="radio" name="q1" value="wrong"> De percusión<br>
+            </div>
+            <div>
+                <p>2. ¿Qué produce el sonido en los instrumentos de viento?</p>
+                <select name="q2">
+                    <option value="wrong">Las cuerdas</option>
+                    <option value="correct">La vibración del aire</option>
+                    <option value="wrong">El golpe</option>
+                </select>
+            </div>
+            <div>
+                <p>3. Selecciona los instrumentos de percusión:</p>
+                <input type="checkbox" name="q3" value="wrong"> Flauta<br>
+                <input type="checkbox" name="q3" value="correct"> Tambor<br>
+                <input type="checkbox" name="q3" value="correct"> Platillos<br>
+            </div>
+            <div>
+                <p>4. ¿Cuál de los siguientes es un instrumento de cuerda?</p>
+                <input type="radio" name="q4" value="correct"> Violín<br>
+                <input type="radio" name="q4" value="wrong"> Trompeta<br>
+                <input type="radio" name="q4" value="wrong"> Tambor<br>
+            </div>
+            <div>
+                <p>5. ¿Qué herramienta usamos para tocar un violín?</p>
+                <input type="radio" name="q5" value="correct"> Un arco<br>
+                <input type="radio" name="q5" value="wrong"> Un baquillo<br>
+                <input type="radio" name="q5" value="wrong"> Una púa<br>
+            </div>
+            <button type="submit">Enviar Respuestas</button>
+        </form>
+    </div>
+
+    <div id="result" class="hidden">
+        <h1>Resultados</h1>
+        <p id="score"></p>
+        <button onclick="location.reload()">Volver a Inicio</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

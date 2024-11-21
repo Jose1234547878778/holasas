@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+h1, h2, h3 {
+    color: #2d2d2d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#login, #course, #quiz, #result {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#login .input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#login .input-group input {
+    width: 48%; 
+}
+
+#login button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #0056b3;
+}
+
+
+#error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+input[type="radio"], input[type="checkbox"], select {
+    margin: 10px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-left: 20px;
+}
+
+
+form div {
+    margin-bottom: 20px;
+}
+
+
+#result p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
